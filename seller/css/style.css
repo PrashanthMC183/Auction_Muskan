@@ -1,0 +1,84 @@
+	/**/
+	.login-container{
+		padding:30px;
+		margin-top:30%;
+		background-color:rgba(0,0,0,0.3);
+		color:#FFF;
+	}
+
+	.home-container{
+	padding:30px;
+	background-color:rgba(0,0,0,0.3);
+    color:#fff;
+	}
+	.chpw-container{
+		padding:30px;
+		margin-top:30%;
+		background-color:rgba(0,0,0,0.3);
+		color:#FFF;
+	}
+	.box a{
+		text-decoration:none;
+		color:#fff;
+	}
+
+	.box a:hover{
+		text-decoration:none;
+		color:red;
+	}
+
+	.mybox{
+		text-align:center;
+		padding:30px;
+		background-color:transparent;
+	}
+
+	.panel{
+		background:transparent;
+		border-radius:0px;
+	}
+
+	.panel-heading{
+		background-color:rgba(0,0,0,0.1)!important;
+		color:#fff!important;
+		border-radius:0px;
+	}
+
+
+	.panel-footer{
+		background-color:rgba(0,0,0,0.1)!important;
+		color:#fff;
+		border-radius:0px;
+	}
+
+	.navbar-default{
+		background-color:rgba(0,0,0,0.3);
+		border:none;
+	}
+
+	.navbar-default .navbar-nav>li>a{
+	color:#fff;
+	}
+
+	.navbar-default .navbar-nav>li>a:hover{
+	color:blue;
+	}
+	.navbar-default .navbar-brand {
+    color: #fff !important;
+	}
+	.view-container
+	{
+		
+		margin-top:5%;
+		background-color:rgba(0,0,0,0.3);
+		max-width: 600px;
+		color:#FFF;
+	}
+	.mybox1{
+		text-align:left;
+		color:#fff;
+		padding:30px;
+		background-color:rgba(0,0,0,0.3);
+	}
+
+	
