@@ -1,0 +1,172 @@
+
+We Will See The Following.
+letters only
+numbers only
+email
+password
+URL
+phone no
+alphanumeric
+*********************************************************************************************
+NOTE : title attribute must be used in the <input> tags which helps users to know whats to input.
+Letters :
+pattern="[A-Za-z]+" accepts only capital or small letters.
+
+<form>
+<input type="text" pattern="[A-Za-z]+" title="letters only" required />
+<input type="submit" />
+</form>
+
+*********************************************************************************************
+Numbers :
+pattern="[0-9]+" accepts only numbers 0, 1, 2....
+
+<form>
+<input type="text" pattern="[0-9]+" title="only letters" required />
+<input type="submit" />
+</form>
+
+*********************************************************************************************
+E-Mail :
+pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" accepts valid email address
+
+<form>
+<input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="xyz@something.com" required />
+<input type="submit" />
+</form>
+
+*********************************************************************************************
+Password :
+pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" accepts one number one upper and lower case letters with 8 or more chars.
+
+<form>
+<input type="password" name="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required />
+<input type="submit" />
+</form>
+
+*********************************************************************************************
+URL :
+pattern="https?://.+" required title="http://cleartuts.blogspot.com" accepts valid web url starting with http://.
+
+<form>
+<input type="url" name="website" pattern="https?://.+" required title="http://cleartuts.blogspot.com" />
+<input type="submit" />
+</form>
+
+*********************************************************************************************
+Phone No :
+pattern="^\d{10}$" accepts only numeric values with 10 digit.
+
+<form>
+<input type="text" pattern="^\d{10}$" title="10 numeric characters only" required />
+<input type="submit" />
+</form>
+
+*********************************************************************************************
+Alpha Numeric:
+pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{5,12}$" accepts alphanumeric values letters and digits.
+
+<form>
+<input type="text" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{5,12}$" title="alphanumeric 6 to 12 chars" />
+<input type="submit" />
+</form>
+
+*********************************************************************************************
+Stylify Validations Using Pseudo Classes Of Css3
+using pseudo css3 classes you can change colors.
+
+input:invalid{
+    border:solid 2px #F5192F;
+}
+input:valid{
+    border:solid 2px #18E109;
+    background-color:#fff;
+}
+
+*********************************************************************************************
+Full Script
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>HTML5 Form Validations with Pattern Matching</title>
+<style type="text/css">
+div
+{
+ line-height:15px;
+}
+input:valid
+{
+ border:solid green 1px;
+}
+input:invalid 
+{
+    border:1px solid red; 
+}
+input:required 
+{
+    border:1px solid #00a2d1; 
+}
+input
+{
+ width:200px;
+ height:25px;
+}
+
+
+</style>
+</head>
+
+<body>
+<form method="post">
+<pre>
+<div>
+<label>Name : (letters only)*</label>
+<input type="text" pattern="[A-Za-z]+" title="only letters" required />
+</div>
+
+<div>
+<label>E-mail : (xyz@zyx.com)*</label>
+<input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="xyz@something.com" required />
+</div>
+
+<div>
+<label>website : (http://cleartuts.blogspot.com)*</label>
+<input type="url"  pattern="https?://.+" title="http://cleartuts.blogspot.com" required />
+</div>
+
+<div>
+<label>pin code : (numbers only)</label>
+<input type="text" pattern="[0-9]+" title="numbers only" required />
+</div>
+
+<div>
+<label>password : (at least 6 chars)</label>
+<input type="password" pattern=".{6,}" title="Six or more characters" required />
+</div>
+
+<div>
+<label>phone no : (10 chars)</label>
+<input type="tel" pattern="^\d{10}$" title="10 numeric characters only" required />
+</div>
+
+<input type="submit">
+</pre>
+</form>
+</body>
+</html>
+
+*********************************************************************************************
+<input type="text" name="Phone Number" pattern="[7-9]{1}[0-9]{9}" title="Phone number with 7-9 and remaing 9 digit with 0-9">
+Try This code...
+
+This code will allow u to enter only this format
+
+eg : 9238726384(starting with 9 or 8 or 7 and other 9 digit using any number) 8237373746 7383673874
+
+Wrong format : 2937389471(starting not with 9 or 8 or7) 32796432796(more than 10 digit) 921543(less than 10 digit)
+***************************************************************************************************************************
+Name:<input type='text' name='name' class='name' style="text-transform: capitalize;" placeholder='Enter your name here'/> 
+first letter in capital
+***************************************************************************************************************************
