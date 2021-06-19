@@ -1,2 +1,2 @@
 # Auction
- Online Bidding Platform
+ Online Bidding Platform by Suneha Muskan
